@@ -1,0 +1,223 @@
+/* ==UserStyle==
+@name           Pogdesign Ash Dark
+@namespace      github.com/ush-ruff
+@homepageURL    https://github.com/ush-ruff/Pogdesign-Ash-Dark
+@updateURL      https://github.com/ush-ruff/Pogdesign-Ash-Dark/raw/main/pogdesign.user.css
+@version        1.0.0
+@description    Dark theme for pogdesign.co.uk
+@author         ushruff
+@license        GNU GPLv3
+==/UserStyle== */
+
+@-moz-document domain("pogdesign.co.uk") {
+  @font-face {
+    font-family: 'Font-Awesome Pro';
+    src: local('Font Awesome Pro Solid'),
+      url(https://dl.dropboxusercontent.com/s/e2y91lv99tje3rj/Font%20Awesome%205%20Pro-Solid-900.otf?dl=0);
+  }
+  
+  html {
+    background: #1b1b1b;
+  }
+
+  footer {
+    background-color: rgba(0 0 0 / 0.25);
+    border-bottom-color: rgba(0 0 0 / 0.025);
+  }
+  
+  /* 1.0 - Main Summary Page */
+  .sumpage {
+    background-color: #1b1b1b;
+  }
+  
+  .sumpage h3 {
+    color: #ddd;
+  }
+  
+  .sumpage .prowide li a:hover {
+    color: #ccc;
+  }
+  
+  .sumpage a {
+    color: #4faafc;
+  }
+  
+  .sumpage a:hover {
+    color: #09f;
+  }
+  
+  /* 1.1 - Aired Eps watch % bar */
+  .soomdata {
+    border-color: black;
+  }
+  
+  .underbar {
+    background-color: #4e4e4e;
+  }
+  
+  .innerbar {
+    background-image: linear-gradient(45deg, #1baa57, #2ecc71);
+  }
+  
+  .sumpage .soomdata span {
+    color: #fffc !important;
+    text-shadow: 1px 1px 0px rgba(51, 51, 51, .8) !important;
+  }
+  
+  /* 2.0 - Series Summary page */
+  .sumtext, .sumquikside li, .sumquikside a {
+    color: #ccc;
+  }
+  
+  .sumquikside li:hover a {
+    color: #eee;
+  }
+  
+  .sumquikside li {
+    border-color: #777;
+  }
+  
+  .icon-pngarr {
+    color: #bbb !important;
+  }
+  
+  .seasonside li:hover .icon-pngarr, .dskseasonlinks li:hover .icon-pngarr {
+    color: #eee !important;
+  }
+
+  .has_status {
+    background-color: #252424;
+    border-color: #545454;
+  }
+  
+  /* 2.0.1 - Header */
+  .soomdata .hafdata {
+    color: #aaa;
+    border-left-color: #131313;
+  }
+  
+  .soomdata ul {
+    border-right-color: #131313;
+  }
+  
+  /* 2.0.2 - Chart */
+  .ct-grid {
+    stroke: #555;
+  }
+  
+  .ct-label {
+    color: #ccc;
+  }
+  
+  /* 2.1 - Season tables */
+  .sumpage .parent .seashead {
+    background-color: #2a2a2a;
+    color: #ccc;
+  }
+  
+  .sumpage .parent .seashead:hover {
+    background-color: #2f2f2f;
+  }
+  
+  .sumpage .ep .pnumber {
+    background-color: #2f2f2f !important;
+  }
+  
+  .sumpage .ep:nth-child(2n+1) {
+    background-color: #3a3a3a;
+  }
+  
+  .sumpage .ep:nth-child(2n) {
+    background-color: #4a4a4a;
+  }
+  
+  .sumpage .ep:hover {
+    background: #2e2e2e !important;
+  }
+  
+  .sumpage .ep strong a, .sumpage .info a, .sumpage .ep .datepub {
+    color: #ddd;
+  }
+  
+  .infochecked a, .infochecked a, .infochecked .datepub {
+    color: #777;
+  }
+  
+  .sumpage .ep .punaired {
+    background-color: #5a5a5a;
+    border-left-color: black;
+  }
+  
+  .sumpage .actionbutton:hover {
+    box-shadow: 0 0px 6px #252525;
+  }
+  
+  .sumpage .ep .letick span::before, 
+  .sumpage .ep .letick span:hover::before,
+  .sumpage .ep input[type="checkbox"]:checked + .letick span::before {
+    content: "\f00c";
+    font-family: "Font-Awesome Pro";
+    font-size: 1.05em !important;
+    transition: all 333ms linear, font-size 0ms linear;
+  }
+  
+  .sumpage .ep input[type="checkbox"]:checked + .letick span:hover::before {
+    content: "\f00d";
+    font-size: 1.2em !important;
+  }
+  
+  /* 2.2 - Season episode details page */
+  .epsumbox {
+    background-color: #2f2f2f;
+  }
+  
+  .epsumbox h3 a, .epsumbox .thedate {
+    color: #ddd;
+  }
+  
+  .epsumtext {
+    color: #ccc;
+    border-color: #131313;
+  }
+  
+  .watchedstats {
+    color: #aaa;
+  }
+  
+  .watchedstats .ep:nth-child(2n) {
+    background-color: #252525;
+  }
+  
+  .watchedstats input[type="checkbox"] + label span {
+    color: #ccc;
+  }
+  
+  .watchedstats input[type="checkbox"]:checked + label span {
+    color: #a849a3;
+  }
+  
+  /* 3.0 - News Summary Page */
+  .summaryinfo {
+    background-color: transparent !important;
+  }
+  
+  .sdfdsfsdfsdf {
+    background-color: #252525;
+  }
+  
+  .summaryinfo h4 a {
+    color: #ddd;
+  }
+  
+  .summaryinfo p {
+    color: #aaa;
+  }
+  
+  .summaryinfo tr {
+    border-bottom-color: #444;
+  }
+  
+  .summaryinfo p a {
+    color: #4faafc;
+  }
+}
