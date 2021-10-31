@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Pogdesign-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Pogdesign-Ash-Dark/raw/main/pogdesign.user.css
-@version        1.0.0
+@version        1.1.0
 @description    Dark theme for pogdesign.co.uk
 @author         ushruff
 @license        GNU GPLv3
@@ -201,8 +201,23 @@
     background-color: transparent !important;
   }
   
-  .sdfdsfsdfsdf {
-    background-color: #252525;
+  .summaryinfo .sdfdsfsdfsdf {
+    margin: 15px;
+    background-color: #2f2f2f;
+    border-radius: 0.5em;
+    overflow: hidden;
+  }
+
+  .summaryinfo span.noshow {
+    margin: 15px;
+  }
+  
+  .summaryinfo .sdfdsfsdfsdf h4 {
+    padding: 8px 15px 0;
+  }
+  
+  .summaryinfo .sdfdsfsdfsdf p {
+    padding: 0 15px;
   }
   
   .summaryinfo h4 a {
@@ -219,5 +234,67 @@
   
   .summaryinfo p a {
     color: #4faafc;
+  }
+  
+  /* 3.1 - Center Pagination on News Summary Page Bottom */
+  .summaryinfo {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr repeat(5, min-content) 1fr;
+  }
+  
+  .summaryinfo div {
+    grid-column: 1 / -1;
+  }
+  
+  a.pbuts {
+    grid-row: 2 / -1;
+    color: #fffc;
+  }
+
+  a.pbuts:hover {
+    color: #fff;
+  }
+  
+  a.pbuts:nth-of-type(1) {
+    grid-column: 2 / 3;
+  }
+  
+  a.pbuts:nth-of-type(2) {
+    grid-column: 3 / 4;
+  }
+  
+  a.pbuts:nth-of-type(3) {
+    grid-column: 4 / 5;
+  }
+  
+  a.pbuts:nth-of-type(4) { 
+    grid-column: 5 / 6;
+  }
+  
+  a.pbuts:nth-of-type(5) {
+    grid-column: 6 / 7;
+  }
+  
+
+  /* 4.0 - Premium Benefits Page */
+  #tvcalendar .calendarinfo {
+    background: rgba(var(--dark-rgb, 25, 25, 25) , .7);
+  }
+
+  #tvcalendar .calendarinfo h3.blocked {
+    color: rgba(255,255,255, 0.8);
+  }
+
+  #tvcalendar .calendarinfo h3.blocked[style*="color: #999;"] {
+    color: #ccc !important;
+  }
+
+  #tvcalendar .calendarinfo p {
+    color: #ddd;
+  }
+
+  #tvcalendar .calendarinfo a[style*="color: blue"] {
+    color: #09f !important;
   }
 }
