@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Pogdesign-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Pogdesign-Ash-Dark/raw/main/pogdesign.user.css
-@version        1.1.1
+@version        1.2.0
 @description    Dark theme for pogdesign.co.uk
 @author         ushruff
 @license        GNU GPLv3
@@ -24,6 +24,14 @@
   footer {
     background-color: rgba(255 255 255 / 0.05);
     border-bottom-color: rgba(0 0 0 / 0.025);
+  }
+
+  .icon-tickmed::before {
+    content: "\f00c";
+    font-family: "Font-Awesome Pro";
+    font-size: 1.1em !important;
+    margin-left: -0.25em;
+    margin-right: 0.25em;
   }
   
   /* 1.0 - Main Summary Page */
