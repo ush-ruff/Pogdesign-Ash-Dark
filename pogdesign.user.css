@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Pogdesign-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Pogdesign-Ash-Dark/raw/main/pogdesign.user.css
-@version        1.2.0
+@version        1.2.1
 @description    Dark theme for pogdesign.co.uk
 @author         ushruff
 @license        GNU GPLv3
@@ -18,14 +18,13 @@
   
   html {
     background: #1b1b1b;
-    color: #ccc;
   }
 
   footer {
     background-color: rgba(255 255 255 / 0.05);
     border-bottom-color: rgba(0 0 0 / 0.025);
   }
-
+  
   .icon-tickmed::before {
     content: "\f00c";
     font-family: "Font-Awesome Pro";
@@ -47,13 +46,13 @@
     color: #ccc;
   }
   
-  .sumpage a {
+/*   .sumpage a {
     color: #4faafc;
   }
   
   .sumpage a:hover {
     color: #09f;
-  }
+  } */
   
   /* 1.1 - Aired Eps watch % bar */
   .soomdata {
@@ -70,7 +69,7 @@
   
   .sumpage .soomdata span {
     color: #fffc !important;
-    text-shadow: 1px 1px 0px rgba(51, 51, 51, .8) !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .9) !important;
   }
   
   /* 2.0 - Series Summary page */
@@ -102,11 +101,13 @@
   /* 2.0.1 - Header */
   .soomdata .hafdata {
     color: #aaa;
-    border-left-color: #131313;
+    border-right-color: rgb(0 0 0 / 0.35);
+    border-left-color: rgb(255 255 255 / 0.15);
   }
   
   .soomdata ul {
-    border-right-color: #131313;
+    border-right-color: rgb(255 255 255 / 0.15);
+    border-left-color: rgb(0 0 0 / 0.35);
   }
   
   /* 2.0.2 - Chart */
@@ -216,7 +217,7 @@
     border-radius: 0.5em;
     overflow: hidden;
   }
-
+  
   .summaryinfo span.noshow {
     margin: 15px;
   }
@@ -246,7 +247,7 @@
   }
   
   /* 3.1 - Center Pagination on News Summary Page Bottom */
-  .summaryinfo {
+  .premprofbg + .summaryinfo {
     display: grid;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr repeat(5, min-content) 1fr;
@@ -260,7 +261,7 @@
     grid-row: 2 / -1;
     color: #fffc;
   }
-
+  
   a.pbuts:hover {
     color: #fff;
   }
