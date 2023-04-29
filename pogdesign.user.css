@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Pogdesign-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Pogdesign-Ash-Dark/raw/main/pogdesign.user.css
-@version        1.2.1
+@version        1.2.2
 @description    Dark theme for pogdesign.co.uk
 @author         ushruff
 @license        GNU GPLv3
@@ -141,8 +141,8 @@
     background-color: #4a4a4a;
   }
   
-  .sumpage .ep:hover {
-    background: #2e2e2e !important;
+  .sumpage .episodelist .ep:hover {
+    background: #2e2e2e;
   }
   
   .sumpage .ep strong a, .sumpage .info a, .sumpage .ep .datepub {
@@ -187,23 +187,31 @@
   
   .epsumtext {
     color: #ccc;
-    border-color: #131313;
+    border-color: #666;
   }
   
   .watchedstats {
     color: #aaa;
   }
   
-  .watchedstats .ep:nth-child(2n) {
-    background-color: #252525;
+  .summaryepisodes .watchedstats .ep {
+    background-color: transparent;
   }
   
   .watchedstats input[type="checkbox"] + label span {
     color: #ccc;
   }
+
+  .watchedstats input[type="checkbox"] + label span:hover {
+    color: #64cde7;
+  }
   
   .watchedstats input[type="checkbox"]:checked + label span {
-    color: #a849a3;
+    color: #00ccff;
+  }
+
+  .bread a {
+    color: #ccc;
   }
   
   /* 3.0 - News Summary Page */
