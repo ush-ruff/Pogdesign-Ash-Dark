@@ -3,7 +3,7 @@
 @namespace      github.com/ush-ruff
 @homepageURL    https://github.com/ush-ruff/Pogdesign-Ash-Dark
 @updateURL      https://github.com/ush-ruff/Pogdesign-Ash-Dark/raw/main/pogdesign.user.css
-@version        1.2.2
+@version        1.2.3
 @description    Dark theme for pogdesign.co.uk
 @author         ushruff
 @license        GNU GPLv3
@@ -251,7 +251,11 @@
   }
   
   .summaryinfo p a {
-    color: #4faafc;
+    color: #4faafc !important;
+  }
+
+  .summaryinfo h4 + lite-youtube {
+    margin-top: 50px !important;
   }
   
   /* 3.1 - Center Pagination on News Summary Page Bottom */
